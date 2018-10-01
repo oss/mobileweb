@@ -1,0 +1,59 @@
+/*  unvisited link  */
+a:link {
+    color: #D90036;
+}
+
+/*  visited link    */
+a:visited {
+    color: #7C001F;
+}
+
+/*  mouse over link */
+a:hover {
+    color: #7C001F;
+}
+
+/*  selected link   */
+a:active {
+    color: #D90036;
+}
+
+.space{
+    margin: auto;
+    padding: 40px;
+}
+
+.line{
+    margin: auto;
+    width: 20%;
+    border: .3px solid black;
+}
+
+body {
+    /background-color: #18191c;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    /color: #a0a0a0;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.headerFile {
+    font-weight: 400;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /color: white;
+    color: black;
+}
+
+.footer{
+    font-size: 10px;
+}
+
+.paraFile{
+    margin: auto;
+    width: 400px;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
