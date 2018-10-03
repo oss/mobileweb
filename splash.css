@@ -7,49 +7,103 @@ a:hover {
     color: #751920;
 }
 
-.navbar{
-    font-size: 13px;
-    
+.row{
+    /display: table;
+    vertical-align: middle;
+    /display: table-cell;
+    /height: 50px;
+    padding: 0px;
 }
 
-.space{
-    margin: auto;
-    padding: 40px;
+.navbar{
+    font-size: 14px;
+    font-weight: 200;
 }
 
 .line{
-    margin: auto;
-    width: 20%;
-    border: .3px solid black;
+    /margin: 10px;
+    /padding: 10px;
+    width: 10px;
+    height: .5px;
+    /border: .3px solid black;
+    background-color: black;
+    
+}
+
+.jumbotron-bus{
+    background-color: #82e0d6;
+}
+
+.jumbotron-inte{
+    background-color: #80b3dd;
+}
+
+.jumbotron-mods{
+    background-color: #7fdb94;
+}
+
+
+.jumbotron{
+    margin: 10px;
+    padding: 40px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+.row {
+    width: 100%;
+}
+
+.jumbotron .col-6 {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.jumbotron .inner-box {
+    width: 400px;
+    text-align: left;
+}
+
+h1{
+    font-weight: 100;
 }
 
 body {
     /background-color: #18191c;
     font-size: 15px;
-    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
     color: #3d3d3d;
     text-align: center;
-}
-
-.h1 {
-    /text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: black;
+    margin: 0;
 }
 
 .footer{
     font-size: 10px;
+    background-color: black;
 }
 
-.paraFile{
-    margin: auto;
-    width: 400px;
-    padding-top:10px;
-    padding-bottom: 20px;
+.category {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.left{
-    width: 500px;
-    padding-left: 100px;
+.category h6 {
+    /padding: 10px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titleLeft{
+    width: 70%;
     text-align: left;
+    /display: table-cell;
 }
