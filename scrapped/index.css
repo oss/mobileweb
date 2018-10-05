@@ -1,24 +1,17 @@
-/*  unvisited link  */
-a:link {
-    color: #C1272D;
-}
 /*  mouse over link */
 a:hover {
     color: #751920;
-}
-
-.row{
-    /display: table;
-    vertical-align: middle;
-    /display: table-cell;
-    /height: 50px;
-    padding: 0px;
 }
 
 .navbar{
     font-size: 14px;
     font-weight: 200;
     padding-bottom: 0;
+    
+}
+
+.nav.navbar-nav.navbar-right li a{
+    color: #FF5E5E;
 }
 
 .container-fluid_main{
@@ -30,7 +23,7 @@ a:hover {
     right: 0px;
     bottom: 0px;
     z-index: -1;
-    height: 100vh;
+    /height: 100vh;
 }
 
 .container-fluid_buttons{
@@ -40,6 +33,8 @@ a:hover {
 .container-fluid_features{
     padding-left: 90px;
     padding-right: 100px;
+    padding: 100px;
+    /color: #FF5E5E;
 }
 
 .line{
@@ -50,44 +45,6 @@ a:hover {
     /border: .3px solid black;
     background-color: black;
     
-}
-
-.jumbotron-bus{
-    background-color: #82e0d6;
-}
-
-.jumbotron-inte{
-    background-color: #80b3dd;
-}
-
-.jumbotron-mods{
-    background-color: #7fdb94;
-}
-
-
-.jumbotron{
-    margin: 10px;
-    padding: 40px;
-    color: #ffffff;
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-}
-
-.row {
-    width: 100%;
-}
-
-.jumbotron .col-6 {
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.jumbotron .inner-box {
-    width: 400px;
-    text-align: left;
 }
 
 h1{
@@ -130,13 +87,47 @@ body {
 }
 
 .button{
-    background-color: #C1272D;
+    background-color: #FF5E5E;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 17px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 50px;
+}
+
+.container-card{
+    padding: 20px;
+}
+
+div.card {
+    /width: 300px;
+    /box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-color: transparent;
+    border-radius: 15px 50px;
+    padding: 0;
+    color: white;
+}
+
+/*
+#card{
+    border-radius: 10px 10px 0px 0px;
+    padding: 0;
+}
+*/
+
+.row{
+    padding: 0;
+}
+
+.footer{
+    background: #2E2E2E;
+    color: white;
+    font-size: 13px;
+    padding: 40px;
+    padding-bottom: 20px;
+    /text-align: left;
 }
