@@ -1,3 +1,31 @@
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 10px;
+    background: transparent url('images/scrollbartransparent.png') repeat-y !important;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: transparent url('images/scrollbartransparent.png') repeat-y !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FCBC53;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent url('images/scrollbartransparent.png') repeat-y !important;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent url('images/scrollbartransparent.png') repeat-y !important;
+}
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
 a:hover{
     color: white;
 }
@@ -10,11 +38,11 @@ a:hover{
 }
 
 .nav.navbar-nav.navbar-right li a{
-    color: #FF5E5E;
+    color: transparent;
 }
 
 .container-fluid_main{
-    padding-bottom: 10px;
+    /padding-bottom: 10px;
     padding: 100px;
     background-color: #FF5E5E;
     
@@ -33,7 +61,7 @@ a:hover{
 }
 
 .container-fluid_features{
-    padding-top: 0px;
+    padding-top: 70px;
     padding-left: 90px;
     padding-right: 100px;
     padding-bottom: 100px;
