@@ -64,12 +64,14 @@ a:hover{
     /display: flex;
     align-content: center;
     justify-content: center;
-    /top: 50%;
+    top: 50%;
     /padding-top: 50%;
     vertical-align: middle;
     align-items: center;
     align-self: center;
     text-align: center;
+    position: absolute;
+    transform: translateY(-50%);
 }
 .titleLeft{
     /width: 70%;
@@ -104,6 +106,14 @@ a:hover{
 .container-fluid_buttons{
     padding: 0;
 }
+#titleImg{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    /top:50px;
+    /position: absolute;
+}
 
 /* features */
 .container-fluid_features{
@@ -111,8 +121,11 @@ a:hover{
     padding-left: 90px;
     padding-right: 100px;
     padding-bottom: 100px;
-    height: 100vh;
     /color: #FF5E5E;
+    /position: absolute;
+    /top: 50%;
+    /transform: translateY(-50%);
+    height: 100vh;
 }
 .category {
     display: flex;
@@ -129,12 +142,17 @@ a:hover{
 
 /* footer */
 .footer{
+    /position: absolute;
+    width: 100%;
     background: #5C5C5C;
     color: white;
     font-size: 13px;
     padding: 40px;
     padding-bottom: 20px;
     /text-align: left;
+    /height: 12vh;
+    
+    /transform: translateY(-100%);
 }
 
 /* cards */
