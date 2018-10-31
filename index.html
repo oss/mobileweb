@@ -11,29 +11,33 @@
 </head>
 
 <body>
+    <div id="container">
+        <div id="header">
     <div class="navbar">
-      <nav class="navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="#"><img src="images/templogo.svg" align=left width=80px></a>
-        <div class="collapse navbar-collapse" id="navbar">
+      <nav class="navbar navbar-expand-sm navbar-dark" style="padding-left:30px">
+        <a class="navbar-brand" href="#"><img src="images/templogo.svg" align=center width=80px></a>
+        <div class="collapse navbar-collapse" id="navbar" alt="navbarResponsive" style>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link js-scroll-trigger" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#Features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact Us</a>
+              <a class="nav-link js-scroll-trigger" href="#Contact">Contact Us</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
+        </div>
     
-    <div class="container-fluid container-fluid_main">
+        <div id="content">
+    <div id="redspace" class="container-fluid container-fluid_main">
         <!-- TITLE -->
         <div class="row" id="main">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="titleLeft">
                     <div class="row">
                         <div class="col-12">
@@ -57,17 +61,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6" id="titleImg">
+            <div class="col-md-6 col-sm-12" id="titleImg">
                 <img src="images/phones-white.svg" width=100%>
             </div>
         </div>
     </div>
     
+    <section id="feat">
     <div class="container-fluid container-fluid_features" id="Features">
 
         <!-- FEATURES -->
-        <div class='category' style="padding-top:50px">
-            <div class="line"></div><h1>Features</h1><div class='line'></div>
+        <div class='category'>
+            <div class="line"></div><h2>Features</h2><div class='line'></div>
         </div>
         
         <div class="row">
@@ -78,7 +83,7 @@
                         <img src="images/busNavi.svg" id="card" width=100%>
                         
                         <h2> Bus Navigation </h2>
-                        <p> Need bus route information? Want to check on the next REXL bus is heading your way? We've got it all. We are the king of the buses. Well, not really, but please go along with it. </p>
+                        <p> Need bus route information? You've come to the rihgt place. We are the ruler of the buses. Behold! Please stand behind the white line while beholding! </p>
                     </div>
                 </div>
             </div>
@@ -90,7 +95,7 @@
                         <img src="images/uniInte.svg" id="card" style="width:100%">
                         
                         <h2> University Integration </h2>
-                        <p> On-campus dining information, academic services, university-related news, all at your fingertips. Tap, tap, tap. Are you impressed yet? </p>
+                        <p> On-campus dining information, academic services, university-related news, all at your fingertips. All of it. Are you impressed yet, Andy? Am I one of the cool kids yet? </p>
                     </div>
                 </div>
             </div>
@@ -116,16 +121,13 @@
                         <img src="images/modDes.svg" id="card" style="width:100%">
                         
                         <h2> Modern Design </h2>
-                        <p> Our updated version of the app makes interaction easy, while keeping a new, sleek design that you're sure to love. You'll be asking to marry the app. Don't worry, we give you permission to. </p>
+                        <p> Our updated version of the app makes interaction easy, while keeping a new, sleek design that you're sure to love. You'll be asking to marry the app. Don't worry, you have our blessings. </p>
                     </div>
                 </div>
             </div>
             
             <div class="col-12" style="padding-top: 30px">
                 <div class='card' style="background-color: #FCBC53">
-                    <!--
-                    <img src="images/fractalBanner-green.png" id="card" style="width:100%">
-                    -->
                     <div class="container container-card">
                         <h2> Made with Love. And Tons of Coffee. </h2>
                         <p> Find something wrong? Had a great new idea? Help us improve.</p>
@@ -133,29 +135,52 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid container-fluid_footer" id="Contact" style="width:100%;padding:0">
-        <div class="footer">   
-            <div class="row">
-                <div class="col-6">
-                    <p>Maintained by your friends at Open System Solutions</p>
-                    <p>(c) 2018, Rutgers University, The State of New Jersey</p>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-6" style="text-align: right">
-                            <a href="mailto:oss@rutgers.edu?Subject=Feedback%20From%20Mobile%20Website" target="_top" class="button">Contact Us</a>
-                        </div>
-                        <div class="col-6" style="text-align: left">
-                            <a href="#" class="button">Back to the top!</a>
-                        </div>
+            
+            <div class="col-12" style="padding-top: 30px">
+                <div class='card' style="background-color: #FCBC53">
+                    <div class="container container-card">
+                        <h2> Please give us five stars please. </h2>
+                        <p> They're really bright and shiny and we appreciate them.</p>
+                        <a target="_blank" href="https://itunes.apple.com/us/app/rutgers-university/id494594693" class="button">Rate us on the App Store</a>
+                        <span style="padding: 5px"></span>
+                        <a target="_blank" href= "https://play.google.com/store/apps/details?id=edu.rutgers.css.Rutgers" class="button">Rate us on Google Play</a>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </div>
+    </section>
+        </div>
+    
+    <div class="footer">   
+        <footer>
+        <div class="row">
+            <div class="col-6">
+                <p>Created and maintained by your friends at Open System Solutions</p>
+                <p>(c) 2018, Rutgers University, The State of New Jersey</p>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6" style="text-align: right">
+                        <a href="mailto:oss@rutgers.edu?Subject=Feedback%20From%20Mobile%20Website" target="_top" class="button">Contact Us</a>
+                    </div>
+                    <!--<div class="col-6" style="text-align: left">-->
+                        <a href="#" class="button">Back to the top!</a>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>    
+    
+    </div>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/index.js"></script>
     
 </body>
     
