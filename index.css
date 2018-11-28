@@ -28,18 +28,18 @@ a:hover{
 
 /* buttons */
 .button{
-    background-color: #FF5E5E;
+    background-color: #ebb600;
     border: none;
     color: white;
-    padding: 10px 17px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 13px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .button:hover{
-    background-color: #5C5C5C;
+    background-color: #CC0033;
     text-decoration: none;
 }
 
@@ -47,8 +47,9 @@ a:hover{
 .navbar{
     font-size: 14px;
     font-weight: 200;
-    /padding-top: 0;
-    background-color: #FF5E5E;
+    padding-top: 0;
+    background-color: #cc0033;
+    /* cc0033 */
     position: absolute;
     left: 0px;
     top: 0px;
@@ -73,30 +74,33 @@ div#main.row{
     height: 50vh;
 }
 #main{
-    /align-content: center;
-    /justify-content: center;
+    align-content: center;
+    justify-content: center;
     top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     /margin: 0 auto;
     width: 100%;
-    /max-width: 1000px;
-    /padding: 100px;
-    vertical-align: middle;
+    padding: 50px;
     align-items: center;
     align-self: center;
     text-align: center;
-    position: relative;
-    transform: translateY(-50%);
 }
 .titleLeft{
     text-align: left;
     align-content: center;
     justify-content: center;
     top: 50px;
+    /width: 100%;
 }
 .container-fluid_main{
     /padding-bottom: 10px;
-    padding: 100px;
-    text-align: center;
+    /transform: scale(100%, 100%);
+    /padding: 50px;
+    /padding-top: 100px;
+    /padding-bottom: 100px;
+    /text-align: center;
     align-content: center;
     /align-items: center;
     /align-self: center;
@@ -105,23 +109,27 @@ div#main.row{
     /margin-left:auto;
     /margin-right: auto;
     width: 100%;
-    background-color: #FF5E5E;
-    /position: fixed;
-    /left: 0px;
-    /top: 0px;
-    /right: 0px;
-    /bottom: 0px;
+    background-color: #cc0033;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
     z-index: -1;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
 }
 .container-fluid_main .button {
-    background-color: #FCBC53;
+    background-color: #ebb600;
     border-radius: 5px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
+}
+#red-content{
+    /position: absolute;
 }
 .container-fluid_buttons{
     padding: 0;
@@ -158,15 +166,10 @@ div#main.row{
 }
 
 /* footer */
-
 .content{
     margin:0;
     padding:0;
     height:100%;
-}
-#container{
-    min-height: 100%;
-    /position: relative;
 }
 .header{
     /padding: 10px;
@@ -181,21 +184,30 @@ div#main.row{
     width: 100%;
     background: #5C5C5C;
 }
-
 #container{
     height:100%;
+    z-index: 10;
 }
 .footer{
     padding: 20px;
     bottom: 0;
     width: 100%;
-    background: #5C5C5C;
+    background: #5f6a72;
     color: white;
     font-size: 13px;
     left: 0;
     right: 0;
     /position: absolute;
     height: 12v;
+}
+.footer #cpyright{
+    padding-top: 10px;
+    /padding-bottom: 10px;
+}
+.footer .col-md-6{
+    /text-align: right;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 /* cards */
@@ -233,6 +245,7 @@ h1{
     font-weight: 100;
 }
 body {
+    /pointer-events:none;
     /background-color: #18191c;
     font-size: 15px;
     font-weight: 100;
